@@ -23,15 +23,15 @@ public class LinkedList {
 
         //с поомощью линкед листов можно также сохранить эти данные, для чего нам нужно создать три обьекта  класса LinkedList
         //записать в поле value значения и связать эти объесты
-        LinkedList linkedList0 = new LinkedList();
-        linkedList0.value = 5;
-        LinkedList linkedList1 = new LinkedList();
-        linkedList1.value = 6;
-        LinkedList linkedList2 = new LinkedList();
-        linkedList2.value = 7;
+        LinkedList linkedList0 = new LinkedList();// создали обьект
+        linkedList0.value = 5;//поместили значения
+        LinkedList linkedList1 = new LinkedList();//создали обьект
+        linkedList1.value = 6;//поместили значения
+        LinkedList linkedList2 = new LinkedList();//создали обьект
+        linkedList2.value = 7;//поместили значения
         //связываем
-        linkedList0.next = linkedList1;
-        linkedList1.next = linkedList2;
+        linkedList0.next = linkedList1; //связвли первый оьект со вторым
+        linkedList1.next = linkedList2;//связали второй обьект с третим
         // теперь зная адрес (ссылку) первого обьекта, мы можем получить доступ к любому обьекту и взять у него данные,
         // например, выведем на экран значение третьего обьекта.
         System.out.println(linkedList0.next.next.value);
